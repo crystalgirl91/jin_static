@@ -1,0 +1,214 @@
+<!-- begin #content -->
+<div id="content" class="content">
+    <!-- begin breadcrumb -->
+    <ol class="breadcrumb pull-right">
+        <li><a href="javascript:;">Home</a></li>
+        <li><a href="javascript:;">Person</a></li>
+        <li class="active">New Person</li>
+    </ol>
+    <!-- end breadcrumb -->
+    <!-- begin page-header -->
+    <h1 class="page-header">New Person <small> Create a person into this system</small></h1>
+    <!-- end page-header -->
+    
+    <!-- begin row -->
+    <div class="row">
+
+        <!-- begin col-9 -->
+        <div class="col-md-9">
+            <!-- begin panel -->
+            <div class="panel panel-inverse panel-with-tabs" data-sortable-id="ui-unlimited-tabs-1">
+                <div class="panel-heading p-0">
+                    <div class="panel-heading-btn m-r-10 m-t-10">
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                    </div>
+                    <!-- begin nav-tabs -->
+                    <div class="tab-overflow">
+                        <ul class="nav nav-tabs nav-tabs-inverse">
+                            <li class="prev-button"><a href="javascript:;" data-click="prev-tab" class="text-success"><i class="fa fa-arrow-left"></i></a></li>
+                            <li class="active"><a href="#nav-tab-1" data-toggle="tab">Teacher</a></li>
+                            <li class=""><a href="#nav-tab-2" data-toggle="tab">Student</a></li>
+                            <li class=""><a href="#nav-tab-3" data-toggle="tab">Family</a></li>
+                            <li class=""><a href="#nav-tab-3" data-toggle="tab">Worker</a></li>
+                            <li class="next-button"><a href="javascript:;" data-click="next-tab" class="text-success"><i class="fa fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="nav-tab-1">
+                        <form class="form-horizontal form-bordered" data-parsley-validate="true">
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">AlphaNum* :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="text" id="alphanum" name="alphanum"  data-type="alphanum" placeholder="Alphanumeric String."  data-parsley-required="true" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">Date ISO* :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="text" id="data-dateIso" placeholder="YYYY-MM-DD"  data-parsley-required="true" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">Required Select Box :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <select class="form-control" id="select-required" name="selectBox" data-parsley-required="true">
+                                    <option value="">Please choose</option>
+                                    <option value="foo">Foo</option>
+                                    <option value="bar">Bar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">Required Radio Button :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="radiorequired" value="foo" id="radio-required" data-parsley-required="true" /> Radio Button 1
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="radiorequired" id="radio-required2" value="bar" /> Radio Button 2
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">Check at least 2 checkboxes :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="checkbox"><label><input type="checkbox" id="mincheck" name="mincheck[]" data-parsley-mincheck="2" value="foo" required /> Checkbox 1</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="mincheck[]" value="bar" /> Checkbox 2</label></div>
+                                <div class="checkbox"><label><input type="checkbox" name="mincheck[]" value="baz" /> Checkbox 3</label></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4">Regular Expression :</label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control parsley-validated" type="text" id="data-regexp" data-parsley-pattern="#[A-Fa-f0-9]{6}" placeholder="hexa color code" data-required="true" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4"></label>
+                            <div class="col-md-6 col-sm-6">
+                                <button type="submit" class="btn btn-danger">Validate</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-tab-2">
+                        <h3 class="m-t-10">Nav Tab 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor, 
+                            est diam sagittis orci, a ornare nisi quam elementum tortor. 
+                            Proin interdum ante porta est convallis dapibus dictum in nibh. 
+                            Aenean quis massa congue metus mollis fermentum eget et tellus. 
+                            Aenean tincidunt, mauris ut dignissim lacinia, nisi urna consectetur sapien, 
+                            nec eleifend orci eros id lectus.
+                        </p>
+                        <p>
+                            Aenean eget odio eu justo mollis consectetur non quis enim. 
+                            Vivamus interdum quam tortor, et sollicitudin quam pulvinar sit amet. 
+                            Donec facilisis auctor lorem, quis mollis metus dapibus nec. Donec interdum tellus vel mauris vehicula, 
+                            at ultrices ex gravida. Maecenas at elit tincidunt, vulputate augue vitae, vulputate neque.
+                            Aenean vel quam ligula. Etiam faucibus aliquam odio eget condimentum. 
+                            Cras lobortis, orci nec eleifend ultrices, orci elit pellentesque ex, eu sodales felis urna nec erat. 
+                            Fusce lacus est, congue quis nisi quis, sodales volutpat lorem.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-tab-3">
+                        <h3 class="m-t-10">Nav Tab 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor, 
+                            est diam sagittis orci, a ornare nisi quam elementum tortor. 
+                            Proin interdum ante porta est convallis dapibus dictum in nibh. 
+                            Aenean quis massa congue metus mollis fermentum eget et tellus. 
+                            Aenean tincidunt, mauris ut dignissim lacinia, nisi urna consectetur sapien, 
+                            nec eleifend orci eros id lectus.
+                        </p>
+                        <p>
+                            Aenean eget odio eu justo mollis consectetur non quis enim. 
+                            Vivamus interdum quam tortor, et sollicitudin quam pulvinar sit amet. 
+                            Donec facilisis auctor lorem, quis mollis metus dapibus nec. Donec interdum tellus vel mauris vehicula, 
+                            at ultrices ex gravida. Maecenas at elit tincidunt, vulputate augue vitae, vulputate neque.
+                            Aenean vel quam ligula. Etiam faucibus aliquam odio eget condimentum. 
+                            Cras lobortis, orci nec eleifend ultrices, orci elit pellentesque ex, eu sodales felis urna nec erat. 
+                            Fusce lacus est, congue quis nisi quis, sodales volutpat lorem.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-tab-4">
+                        <h3 class="m-t-10">Nav Tab 4</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer ac dui eu felis hendrerit lobortis. Phasellus elementum, nibh eget adipiscing porttitor, 
+                            est diam sagittis orci, a ornare nisi quam elementum tortor. 
+                            Proin interdum ante porta est convallis dapibus dictum in nibh. 
+                            Aenean quis massa congue metus mollis fermentum eget et tellus. 
+                            Aenean tincidunt, mauris ut dignissim lacinia, nisi urna consectetur sapien, 
+                            nec eleifend orci eros id lectus.
+                        </p>
+                        <p>
+                            Aenean eget odio eu justo mollis consectetur non quis enim. 
+                            Vivamus interdum quam tortor, et sollicitudin quam pulvinar sit amet. 
+                            Donec facilisis auctor lorem, quis mollis metus dapibus nec. Donec interdum tellus vel mauris vehicula, 
+                            at ultrices ex gravida. Maecenas at elit tincidunt, vulputate augue vitae, vulputate neque.
+                            Aenean vel quam ligula. Etiam faucibus aliquam odio eget condimentum. 
+                            Cras lobortis, orci nec eleifend ultrices, orci elit pellentesque ex, eu sodales felis urna nec erat. 
+                            Fusce lacus est, congue quis nisi quis, sodales volutpat lorem.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end panel -->
+        </div>
+        <!-- end col-9 -->
+        <!-- begin col-3 -->
+        <div class="col-md-3">
+            <div class="m-b-10 text-inverse f-s-10"><b>MAIN FEATURES</b></div>
+            <table class="text-inverse m-b-20 width-full">
+                <tr>
+                    <td>
+                        <i class="fa fa-laptop fa-2x pull-left fa-fw"></i>
+                        <div class="m-t-4">Responsive in any screen size</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-t-10">
+                        <i class="fa fa-crosshairs fa-2x pull-left fa-fw"></i>
+                        <div class="m-t-4">Autofocus on Active Tabs</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-t-10">
+                        <i class="fa fa-expand fa-2x pull-left fa-fw"></i>
+                        <div class="m-t-4">Support Expand Features</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-t-10">
+                        <i class="fa fa-wrench fa-2x pull-left fa-fw"></i>
+                        <div class="m-t-4">Auto Show / Hide Next and Prev Button</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="alert alert-warning">
+                <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i> Unlimited Navigation Tabs is <b class="text-inverse">not compatible</b> with the bootstrap dropdown menu.
+            </div>
+        </div>
+        <!-- end col-3 -->
+    </div>
+    <!-- end row -->
+</div>
+<!-- end #content -->
+
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script>
+    App.restartGlobalFunction();
+    App.setPageTitle('Color Admin | Unlimited Nav Tabs');
+
+    $.getScript('assets/plugins/parsley/dist/parsley.js');
+</script>
+<!-- ================== END PAGE LEVEL JS ================== -->
